@@ -1,9 +1,22 @@
-$body-bg:		#0abde3;
-$navbar-default-bg:	#f7f1e3;
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
+$font-family-sans-serif:	'Quattrocento Sans', sans-serif;
+$body-bg:		#F8EFBA;
+$navbar-default-bg:	#25CCF7;
 $navbar-default-link-color:	#1B1464;
-$jumbotron-bg: #f7f1e3;
+$jumbotron-bg: #9AECDB;
 $jumbotron-color:	#1B1464;
+$jumbotron-heading-color:	#1B1464;
 $navbar-default-border:	#1B1464;
-$navbar-default-link-active-bg:	#1B1464;		
+$navbar-default-link-active-bg:	#1B1464;
 
 @import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+}		
+
