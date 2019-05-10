@@ -87,6 +87,10 @@ Rails.application.configure do
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
+
+  # required for heroku
+  # note to set this to actual host
+  config.action_mailer.default_url_options = { host: 'omr-wonderingways.com', port: 3000 }
   end
 
   # Do not dump schema after migrations.
