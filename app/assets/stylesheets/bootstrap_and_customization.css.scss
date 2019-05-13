@@ -2,14 +2,14 @@
 
 $font-family-sans-serif:	'Quattrocento Sans', sans-serif;
 $body-bg:	#F8EFBA;
-$navbar-default-bg:	#48dbfb;
+$navbar-default-bg:	#4bcffa;
 $navbar-default-link-color:	#1B1464;
-$jumbotron-bg:	#48dbfb;
+$jumbotron-bg:	#F8EFBA;
 $jumbotron-color:	#F8EFBA;
 $jumbotron-heading-color:	#1B1464;
 $navbar-default-border:	#1B1464;
 $navbar-default-link-active-bg:	#1B1464;
-$table-border-color:	#3B3B98;
+
 
 @import 'bootstrap';
 
@@ -19,5 +19,9 @@ $table-border-color:	#3B3B98;
 
 .navbar-brand {
      font-weight: bold;
-}		
+}
+
+.jumbotron{
+  border:solid 5px #7ed6df;
+}	
 
