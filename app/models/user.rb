@@ -1,11 +1,10 @@
-class User < ApplicationRecord
-  # attr_accessor :email, :password, :password_confirmation
-  # validates :password, :presence => true,
-  # 					   :confirmation => true, 
-  # 					   :length => {:within => 6..40},
-  #                      :on => :create, 
-  #                      :format => {:with => /\A.*(?=.{10,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\+\=]).*\Z/ }
-  
-  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable 
+class User < ActiveRecord::Base
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :confirmable,
+  # :lockable, :timeoutable and :omniauthable
 
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+
+  has_many :pins
 end
