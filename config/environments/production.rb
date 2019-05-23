@@ -90,8 +90,19 @@ Rails.application.configure do
 
   # required for heroku
   # note to set this to actual host
-  config.action_mailer.default_url_options = { host: 'omr-wonderingways.com', port: 3000 }
-  end
+  
+config.action_mailer.default_url_options = { host: 'omr-wonderingways.com', port: 3000 }
+
+  # Sets Paperclip to upload images to Amazon S3
+    config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_credentials => {
+        :bucket => ENV['AWS_BUCKET_NAME'],
+        :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+        :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      }
+    }
+end
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
