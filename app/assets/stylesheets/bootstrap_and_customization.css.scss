@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
 
+
 $font-family-sans-serif:	'Quattrocento Sans', sans-serif;
 $body-bg:	#f7f5e8;
 $navbar-default-bg:	#4bcffa;
@@ -10,8 +11,11 @@ $jumbotron-heading-color:	#1B1464;
 $navbar-default-border:	#1B1464;
 $navbar-default-link-active-bg:	#1B1464;
 
-
+@import "bootstrap-sprockets";
 @import 'bootstrap';
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 .center {
      text-align: center;
